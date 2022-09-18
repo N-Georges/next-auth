@@ -6,17 +6,14 @@ import {
 	Grid,
 	Heading,
 	VStack,
-	FormControl,
 	FormLabel,
-	FormErrorMessage,
-	FormHelperText,
 	Input,
 	chakra,
     Divider,
     Flex,
     Text,
 } from '@chakra-ui/react'
-import { useSession, signIn, signOut } from 'next-auth/react'
+import { useSession, signIn } from 'next-auth/react'
 
 import { BsGithub, BsTwitter, BsGoogle } from 'react-icons/bs'
 
@@ -77,7 +74,7 @@ const Signin = () => {
 			</chakra.form>
             <Flex alignItems='center' my={2}>
             <Divider mt={1} />
-            <Text mx={2} fontWeight='bold'>or</Text>
+            <Text mx={2}>or</Text>
             <Divider mt={1}/>
             </Flex>
 			<VStack>
